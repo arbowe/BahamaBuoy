@@ -1,0 +1,11 @@
+/* IE Fallback */
+
+#top-nav .navbar-inner {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C4D4D4D,endColorstr=#4C4D4D4D);
+	background-color: transparent;
+}
+
+.header {
+	background-position: center bottom;
+	background-color: #0376DA;
+}

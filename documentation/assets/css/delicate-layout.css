@@ -1,0 +1,50 @@
+/*	
+*	############################################################################
+*	
+*	Delicate Layout Style
+*	---------------------------------------------------------------------
+*	@version	1.0
+*	@author		The Develovers
+*	@link		http://www.thedevelovers.com
+*	@copyright	Copyright 2013 The Develovers
+*	---------------------------------------------------------------------
+*	
+*	Layout style definition for sidebar enabled scenario. 
+*
+*	############################################################################
+*/
+
+
+
+/*	#Sidebar Base Grid Layout
+================================================== */
+	
+	.del-main-content { width: 960px; }
+	
+/*	Redefine width and margin for page block wrapper */
+
+	.container .del-wrapper.column,
+	.container .del-page-block.del-wrapper						{ margin-left: 0; margin-right: 0 }
+	
+
+/*	Single Sidebar */
+	
+    .container.single-sidebar .del-main-content .four.columns          { width: 139px; }
+    .container.single-sidebar .del-main-content .eight.columns         { width: 298px; }
+    .container.single-sidebar .del-main-content .twelve.columns        { width: 448px; }
+    .container.single-sidebar .del-main-content .sixteen.columns       { width: 620px; }
+
+    .container.single-sidebar .del-main-content .one-third.column      { width: 192px; }
+    .container.single-sidebar .del-main-content .two-thirds.column     { width: 398px; }
+    
+    
+/*	Double Sidebar */
+
+	.container.double-sidebar .del-main-content .del-page-block		   { margin-left: 0; }
+	.container.double-sidebar .del-main-content .four.columns,
+	.container.double-sidebar .del-main-content .eight.columns,
+	.container.double-sidebar .del-main-content .twelve.columns,         
+	.container.double-sidebar .del-main-content .sixteen.columns,
+	.container.double-sidebar .del-main-content .one-third.column,        
+	.container.double-sidebar .del-main-content .two-thirds.column     { width: 440px; }
+

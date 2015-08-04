@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<title>BIG Thing Documentation</title>
+	<!-- Basic Page Needs
+  	================================================== -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->	
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="assets/js/styles/shCore.css" rel="stylesheet" type="text/css" />
+  	<link href="assets/js/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="wrapper" class="container">
+
+	<!-- begin head and top -->
+	<div id="head" class="sixteen columns">
+		<p>BIG Thing Documentation by thedevelovers v1.1</p>
+		<img src="assets/images/big-thing-logo.png" alt="BIG Thing Logo" />
+	</div>
+
+	<div id="top" class="sixteen columns">
+		<div class="doc-meta left four columns alpha">
+			<p>Created: 30/05/2013</p>
+			<p>By: thedevelovers</p>
+			<p>Email: <a href="mailto:contact@thedevelovers.com">contact@thedevelovers.com</a></p>		
+		</div>
+		<p class="welcome right twelve columns omega">
+		Thank you for purchasing BIG Thing Responsive Landing Pages. By reading this documentation we hope you will get the most of its features. We keep going on making this theme better and better in the future by providing updates. 
+		If you have any questions that are beyond the scope of this help file, please feel free to contact us via email. Thank you.
+		</p>
+	</div>
+	<!-- end head and top -->
+		
+	<!-- begin content -->
+	<div id="bottom" class="sixteen columns">
+		<h2><a name="toc">Table of Contents</a></h2>
+		<!-- begin toc -->
+		<ol class="toc level1">
+			<li><a href="#a">HTML Structure</a></li>
+			<li><a href="#b">Hero Unit</a></li>
+			<li><a href="#c">Main Content</a>
+				<ol class="toc level2">
+					<li><a href="#c1">Features</a></li>
+					<li><a href="#c2">Testimonials</a></li>
+					<li><a href="#c3">Call-to-Action</a></li>													
+					<li><a href="#c4">Newsletter</a></li>				
+					<li><a href="#c5">Footer</a></li>
+				</ol>
+			</li>
+			<li><a href="#d">CSS</a></li>
+			<li><a href="#e">Javascript</a></li>
+			<li><a href="#f">PSD</a></li>
+			<li><a href="#g">Sources and Credits</a></li>
+		</ol>
+		<!-- end toc -->
+
+		<!-- begin main documentation content -->
+		<div class="explanation">
+			<div class="topic">
+				<h2><a name="a">A.) HTML Structure</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>This template uses HTML5 as its structure and Twitter Bootstrap, it has maximum width 1170px. Generally the page layout can be depicted in the below illustration block.</p>
+				<div class="block">
+					<strong>header</strong>
+					<p>Header container, also hold the full-screen background as the background image in the CSS.</p>
+					<div class="block"><strong>#top-nav</strong><p>Logo, top navigation</p></div>
+					<div class="block"><strong>div .hero-unit</strong><p>All elements either hero text or hero image/video placed on the full-screen background image.</p></div>
+				</div>
+				<div class="block">
+					<strong>div .main-content</strong>
+					<p>Hold content after hero unit and before newsletter</p>
+					<div class="block"><strong>#features-section</strong><p>Divided into two columns to separate image and text content.</p></div>
+					<div class="block"><strong>#testimonials-section</strong><p>Full-width testimonial with fade effect.</p></div>
+					<div class="block"><strong>#pricing / #call-to-action</strong><p>Pricing table can be found on the General Landing Pages and call-to-action on the App Landing Pages.</p></div>
+				</div>
+				<div class="block"><strong>section .newsletter</strong><p>Divided into two columns, text on the left and form on the right.</p></div>
+				<div class="block"><strong>footer</strong><p>Copyright and social icons.</p></div>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>
+			</div>
+			<div class="topic">
+				<h2><a name="b">B.) Hero Unit</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>There are 3 types of hero unit as each of them will suitable for specific purpose such as App and General Landing Pages either full-width or two-columns style with embedded video. Here you can compare all of the codes clearly.</p>
+				<p>Hero Unit on The App Landing Pages</p>
+				<script type="syntaxhighlighter" class="brush: html">
+    			<![CDATA[
+					<!-- begins hero unit -->
+					<div class="hero-unit">
+						<div class="container">
+							<div class="row-fluid">
+								<div class="span6 hero-text">
+									<h2 class="heading">A PERFECT LANDING PAGE TO SHOWCASE YOUR APP</h2>
+									<p class="description">Proactively iterate end-to-end networks rather than pandemic benefits. Collaboratively drive focused vortals for enterprise ROI. Appropriately.</p>
+									<a href="#" class="btn btn-primary"><img src="assets/img/btn-app-store.png" alt="Get App"/></a>
+								</div>
+								<div class="span6 hero-image">					
+									<div id="hero-carousel" class="carousel slide">
+										<div class="carousel-inner">
+											<div class="item active">
+												<img src="assets/img/slide-item1.png" alt="BIG Thing App">
+											</div>
+											<div class="item">
+												<img src="assets/img/slide-item2.png" alt="BIG Thing App">
+											</div>						
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<!-- ends hero unit -->
+				]]>
+				</script>
+				<p>Hero Unit on The General Landing Pages</p>
+				<script type="syntaxhighlighter" class="brush: html">
+    			<![CDATA[
+					<!-- begins hero unit -->
+					<div class="hero-unit">
+						<div class="container">
+							<div class="row-fluid">
+								<div class="span12 hero-text">
+									<h2 class="heading">A PERFECT LANDING PAGE TO SHOWCASE YOUR PRODUCT</h2>
+									<p class="description">Proactively iterate end-to-end networks rather than pandemic benefits. Collaboratively drive focused vortals for enterprise ROI. Appropriately.</p>
+									<a href="#features-section" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>				
+					</div>
+					<!-- ends hero unit -->
+				]]>
+				</script>
+				<p>Hero Unit on The General Landing Pages With Video</p>
+				<script type="syntaxhighlighter" class="brush: html">
+    			<![CDATA[
+					<!-- begins hero unit -->
+					<div class="hero-unit video">
+						<div class="container">
+							<div class="row-fluid">
+								<div class="span7 hero-video">
+									<iframe src="http://player.vimeo.com/video/63433901?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" height="377" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+								</div>
+								<div class="span5 hero-text">
+									<h2 class="heading">A PERFECT LANDING PAGE TO SHOWCASE YOUR PRODUCT</h2>
+									<p class="description">Proactively iterate end-to-end networks rather than pandemic benefits. Collaboratively drive focused vortals for enterprise ROI. Appropriately.</p>
+									<a href="#features-section" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>				
+					</div>
+					<!-- ends hero unit -->
+				]]>
+				</script>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>				
+			</div>
+			<div class="topic">
+				<h2><a name="c">C.) Main Content</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<ol class="topic level2">
+					<li><h3><a name="c1">C1.) Features</a></h3>
+					<p>The features section is mainly showing image and text content side-by-side. Below you can see one feature item block of codes that you can copy-paste as needed for your content. The .feature-item is directly a child of .features-section </p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+						<div class="row-fluid feature-item">
+							<div class="span6">
+								<img src="assets/img/feature-bootstrap.png" alt="Feature" />
+							</div>
+							<div class="span6 right-text">
+								<h2 class="heading">BASED ON BOOTSTRAP</h2>
+								<p class="description">Interactively brand fully tested niche markets via high standards in meta-services. Intrinsicly reinvent market positioning convergence after long-term high-impact leadership. Completely initiate covalent materials vis-a-vis professional.</p>
+							</div>					
+						</div>
+						<hr />
+					]]>
+					</script>
+					<p>Note the <pre class="brush: js;"><hr /></pre> tag on the line 10, possibly you don't want to add horizontal line after the last .feature-item. Another version of features section is presented as second priority to the first one. Useful when you want to showcase more features but still maintain the page/content simplicity.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+						<section class="container section features-more">
+							<h2 class="heading">and more...</h2>
+							<div class="row-fluid">
+								<div class="span3 more-item">
+									<h3 class="heading"><i class="icon icon-html5"></i> HTML5 &amp; CSS3</h3>
+									<div class="description">
+										<p>Credibly exploit cutting-edge alignments for parallel experiences. Credibly utilize worldwide leadership through high-payoff deliverables. Progressively network intermandated human capital.</p>
+										<a href="#" class="learn-more pull-right">Learn More &rarr;</a>
+									</div>
+								</div>
+								<div class="span3 more-item">
+									<h3 class="heading"><i class="icon icon-money"></i> Pricing Tables</h3>
+									<div class="description">
+										<p>Synergistically seize front-end information after client-centered results. Dramatically parallel task adaptive testing procedures rather than intermandated ROI. Synergistically leverage.</p>
+										<a href="#" class="learn-more pull-right">Learn More &rarr;</a>
+									</div>
+								</div>
+								<div class="span3 more-item">
+									<h3 class="heading"><i class="icon icon-bar-chart"></i> SEO Optimized</h3>
+									<div class="description">
+										<p>Dynamically embrace goal-oriented core competencies without timely platforms. Appropriately exploit inexpensive sources for customized resources. Authoritatively deliver bleeding-edge portals.</p>
+										<a href="#" class="learn-more pull-right">Learn More &rarr;</a>
+									</div>
+								</div>
+								<div class="span3 more-item">
+									<h3 class="heading"><i class="icon icon-file-alt"></i> Well Documented</h3>
+									<div class="description">
+										<p>Monotonectally negotiate best-of-breed convergence whereas highly efficient networks. Compellingly expedite optimal infomediaries and mission-critical deliverables. Credibly foster cooperative results.</p>
+										<a href="#" class="learn-more pull-right">Learn More &rarr;</a>
+									</div>
+								</div>
+							</div>				
+						</section>
+					]]>
+					</script>
+					</li>
+					<li><h3><a name="c2">C2.) Testimonials</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>The testimonials section use .full-width class to strect the content without left and right margin. Flexslider jQuery plugin is used to fade the content. You can find the javascript related in the assets/js/big-thing.js</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+						<div class="full-width">
+							<section id="testimonials-section" class="container testimonials flexslider">
+								<h2 class="hide">Testimonial</h2>
+								<ul class="slides">
+									<li>
+										<i class="icon-quote-left icon-4x pull-left"></i>
+										<p class="testimonial-content">Dynamically simplify multifunctional innovation before long-term high-impact bandwidth.
+										<span class="author">- Jane Watson, CEO of Fantasy Corp.</span>
+										</p>
+									</li>
+									<li>
+										<i class="icon-quote-left icon-4x pull-left"></i>
+										<p class="testimonial-content">Completely disseminate stand-alone leadership vis-a-vis team building human capital.
+										<span class="author">- Mandy, Art Director of Dream Team</span>
+										</p>
+									</li>
+									<li>
+										<i class="icon-quote-left icon-4x pull-left"></i>
+										<p class="testimonial-content">Authoritatively maintain bricks-and-clicks total linkage after corporate.
+										<span class="author">- Steven, Manager of Lucid</span>
+										</p>
+									</li>
+								</ul>
+							</section>
+						</div>
+					]]>
+    				</script>
+					<p>Note that we use Font Awesome icon for the large quote icon (use of .icon-4x class). </p>					
+					</li>
+					<li><h3><a name="c3">C3.) Call-to-Action</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>This section is provided with two variants. App Landing Page will use two-columns of content (text and App Store button) and image, whereas General Landing Page uses pricing table.</p>	
+					<p>Call-to-action on App Landing Page</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<section id="call-to-action" class="container section call-to-action">
+							<div class="row-fluid inner">
+								<div class="span7">
+									<h2 class="heading">Discover Now</h2>
+									<p class="description">We do want you to create a great app, the next big thing. Let the landing page becomes our part, so you can save more time and focus on your app instead. </p>
+									<a href="#" class="btn btn-primary"><img src="assets/img/btn-app-store.png" alt="Get App" /></a>
+								</div>
+								<div class="span5 image-wrapper">
+									<img src="assets/img/call-to-action-iphone.png" class="pull-right" alt="iPhone App" />
+								</div>
+							</div>
+						</section>
+    				]]>
+    				</script>
+    				<p>Pricing Table on General Landing Page</p>
+    				<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<section id="pricing" class="container section pricing">
+							<h2 id="pricing-head" class="heading not-visible">Pricing</h2>
+							<div class="row-fluid">
+								<div class="span6 pricing-table">
+									<h3 class="heading">Free</h3>
+									<p class="description">get free service with limited access</p>				
+									<ul class="icon-feature">
+										<li><i class="icon icon-3x icon-film"></i></li>
+										<li><i class="icon icon-3x icon-headphones"></i></li>
+									</ul>
+									<div class="bottom">			
+										<ul class="feature-list">
+											<li>Get access to video and music</li>
+											<li>Save favoorite item to the profile</li>
+											<li>Getting ads in the page and while playing</li>
+										</ul>
+										<a href="#" class="btn default">Get Free</a>
+									</div>
+								</div>
+								<div class="span6 pricing-table recommended">
+									<h3 class="heading">Premium</h3>
+									<p class="pricing-badge"><span>30 Days<br/> Free Trial</span></p>
+									<p class="description">enjoy your full privileges</p>				
+									<ul class="icon-feature">
+										<li><i class="icon icon-3x icon-film"></i></li>
+										<li><i class="icon icon-3x icon-headphones"></i></li>
+										<li><i class="icon icon-3x icon-desktop"></i></li>
+										<li><i class="icon icon-3x icon-mobile-phone"></i></li>
+										<li><i class="icon icon-3x icon-download-alt"></i></li>
+									</ul>
+									<div class="bottom">			
+										<ul class="feature-list">
+											<li>Access video anytime &amp; anywhere</li>
+											<li>Unlimited download video &amp; music</li>
+											<li>No ads &amp; no commitment</li>
+										</ul>
+										<a href="#" class="btn btn-primary">Try Premium</a>
+									</div>
+								</div>
+							</div>
+						</section>
+    				]]>
+    				</script>
+					</li>								
+					<li><h3><a name="c4">C4.) Newsletter</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>You can change the newsletter section and form by finding the block as below</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<section class="full-width newsletter">
+							<div class="container">
+								<div class="row-fluid">
+									<div class="span6">
+										<h3 class="heading">Join Our Newsletter</h3>
+										<p class="description">Stay up to date with the latest news by subscribing to our newsletter.</p>
+									</div>
+									<div class="span6">
+										<div class="alert">
+											<button type="button" class="close">×</button>
+											<p></p>
+										</div>
+										<form class="form-inline pull-right">
+											<input type="email" name="email" placeholder="youremail@domain.com">
+											<input type="button" class="btn btn-primary" value="Subscribe Now">
+										</form>	
+									</div>
+								</div>
+							</div>
+						</section>
+    				]]>
+    				</script>
+    				<p>This template uses MailChimp to manage subscription. In order to make the newsletter form works, please make sure the theme is in the PHP enabled environment, otherwise it doesn't work (i.e. opening the template as static file instead on localhost). Open mailchimp.php and provide API key and list ID where you can get them from your MailChimp account.</p>
+    				<script type="syntaxhighlighter" class="brush: js">
+    				<![CDATA[
+    					  // Your API Key: http://admin.mailchimp.com/account/api/
+						  $api = new MCAPI('YOUR_API_KEY');
+
+						  // Your List Unique ID: http://admin.mailchimp.com/lists/ (Click "settings")
+						  $list_id = "YOUR_LIST_ID";
+    				]]>
+    				</script>
+					</li>				
+					<li><h3><a name="c5">C5.) Footer</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>The social icons in the footer uses Socialico icon. To see the complete list of available social icons, open file /assets/css/style.css and find "available social icons" section.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<div class="span6 social">
+							<ul>
+								<li><a href="#"><i class="socicon facebookcircle"></i></a></li>
+								<li><a href="#"><i class="socicon twittercircle"></i></a></li>
+								<li><a href="#"><i class="socicon dribbblecircle"></i></a></li>
+								<li><a href="#"><i class="socicon googlecircle"></i></a></li>
+							</ul>	
+						</div>
+    				]]>
+    				</script>
+					</li>
+				</ol>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>
+			</div>			
+			<div class="topic">
+				<h2><a name="d">D.) CSS</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>The CSS is clean and well-written to help you or another developer to customize the template. The main structure of the CSS can be summarized into the list as below.</p>
+				<ol>
+					<li>General</li>
+					<li>Fonts</li>
+					<li>Socialico, Social Media Icons</li>
+					<li>Plugins</li>
+					<li>General Bootstrap Overrides</li>
+					<li>Header</li>
+					<li>Features</li>
+					<li>Testimonials</li>
+					<li>Newsletter</li>
+					<li>Footer</li>
+					<li>Media Queries</li>					
+				</ol>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>			
+			</div>
+			<div class="topic">
+				<h2><a name="e">E.) Javascript</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>You can find all the javascript files in the /assets/js/ directory. Please note that the directory mainly consists of framework or plugin scripts. The only file that specific to the template and we can change is big-thing.js</p>
+				<script type="syntaxhighlighter" class="brush: js">
+    			<![CDATA[
+					$(document).ready(function() {
+
+						/* init testimonial fade slider */
+						$('.flexslider').flexslider({
+								directionNav: false,
+								slideshowSpeed: 6000, /* adjust the speed in milliseconds */
+								useCSS: true,
+								touch: true,
+								controlNav: false,
+								pauseOnAction: true,
+								pauseOnHover: false
+								
+						});
+
+						// init scroll-to effect navigation, adjust the scroll speed in milliseconds
+						$('#main-menu').localScroll(1000);
+						$('.hero-text').localScroll(1000);	
+
+
+						// init carousels
+					  	$('#hero-carousel').carousel();
+
+						// feature detection and polyfill
+						
+						var theForm = $('.ie8 form');
+						
+						theForm.find('input, textarea').each(function(){
+							
+							// if HTML5 input placeholder is not supported
+							var placeholderText = $(this).attr('placeholder');
+							
+							if(placeholderText){
+								
+								$(this)
+									.addClass('input-placeholder')
+									.val(placeholderText)
+									.bind('focus', function(){
+									
+										if($(this).val() == placeholderText ){
+											
+											$(this).val('').removeClass('input-placeholder');
+										}
+									
+									})
+									.bind('blur', function(){
+										
+										if($(this).val() == '' ){
+										
+											$(this).val(placeholderText).addClass('input-placeholder');
+										}
+									});
+							}				
+						});
+
+					});
+    			]]>
+    			</script>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>			
+			</div>
+			<div class="topic">
+				<h2><a name="f">F.) PSD</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>We provide PSD files for easy customization to fit with your content and requirements. Below is the PSD files provided:</p>
+				<ul>
+					<li>big-thing-app.psd (main PSD template for App Landing Page)</li>
+					<li>big-thing-general.psd (main PSD template for General Landing Page)</li>
+					<li>iphone-white-mockup.psd (PSD for top hero image carousel placeholder in App Landing Page)</li>
+					<li>slide-item.psd (PSD for individual slide item placed in hero image carousel, please use this as slide item size reference)</li>
+					<li>feature-responsive.psd (PSD for 3D view iPhone on the feature section)</li>
+					<li>call-to-action-iphone.psd (PSD for 3/4 view iPhone on the call-to-action section)</li>
+				</ul>
+			</div>
+			<div class="topic">
+				<h2><a name="g">g.) Sources &amp; Credits</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>Big Thing uses the following images, icons and jQuery plugin libraries.</p>
+				<p>Images:</p>
+				<ul>
+					<li>Hero Image Background - <a href="http://www.flickr.com/photos/aigle_dore/5951712925/in/set-72157627258991739">http://www.flickr.com/photos/aigle_dore/5951712925/in/set-72157627258991739</a></li>
+					<li>3D View iPhone - <a href="http://pixeden.com/psd-mock-up-templates/3d-view-iphone-5-psd-vector-mockup">http://pixeden.com/psd-mock-up-templates/3d-view-iphone-5-psd-vector-mockup</a></li>
+					<li>iPhone White - <a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-vector-mockup">http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-vector-mockup</a></li>
+					<li>3/4 View iPhone - <a href="http://www.pixeden.com/psd-mock-up-templates/iphone-4s-psd-vector-mockup-template">http://www.pixeden.com/psd-mock-up-templates/iphone-4s-psd-vector-mockup-template</a></li>
+					<li>Twitter App on the Carousel - <a href="http://kbsportfolio.com/2012/10/30/resource-for-designer-twitter-app/">http://kbsportfolio.com/2012/10/30/resource-for-designer-twitter-app/</a>, <a href="http://kbsportfolio.com/freebies/">free to modify and for commercial use</a></li>
+					<li>Music Player App - <a href="http://kbsportfolio.com/2012/05/04/resource-for-designer-transparent-ui-kit/">http://kbsportfolio.com/2012/05/04/resource-for-designer-transparent-ui-kit/</a>, <a href="http://kbsportfolio.com/freebies/">free to modify and for commercial use</a></li>		
+				</ul>
+				<p>Icons:</p>
+				<ul>
+					<li>Font Awesome - <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
+					<li>Icons Sweet 2 - <a href="http://www.iconsweets.com">http://www.iconsweets.com</a></li>
+					<li>Socialico - <a href="http://fontfabric.com/‎">http://fontfabric.com/‎</a></li>
+				</ul>				
+				<p>jQuery:</p>
+				<ul>
+					<li>FlexSlider - <a href="http://flexslider.woothemes.com">http://flexslider.woothemes.com</a></li>
+					<li>jQuery ScrollTo and LocalScroll - <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">http://flesler.blogspot.com/2007/10/jqueryscrollto.html</a></li>
+				</ul>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>
+			</div>
+		</div>
+		<!-- end main documentation content -->
+	</div>
+	<!-- end content -->
+	<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template.</p>
+	<br/>
+	<p>thedevelovers</p>
+	<p><a href="#top">Go To Table of Contents</a></p>
+</div>
+<!-- end wrapper -->
+
+
+	<script type="text/javascript" src="assets/js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shAutoloader.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">
+	   SyntaxHighlighter.all();
+	   
+	   $(document).ready(function(){
+	     $('h3.numerate').each(function(i, element){
+	       $('strong', element).prepend(String.fromCharCode(65 + i) + ') ');
+	       $(element).attr('id', 'section-' + (i+1));
+	     });
+	     
+	     $('ol.alpha li').each(function(i, element){
+	       if ($('a', element).attr('href') == '#' || $('a', element).attr('href') == '') {
+	        $('a', element).attr('href', '#section-' + (i+1));  
+	       }
+	     });
+	   });
+	</script>
+
+</body>
+</html>

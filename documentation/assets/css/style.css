@@ -1,0 +1,210 @@
+/*	
+*	############################################################################
+*	
+*	Delicate Documentation Style
+*	---------------------------------------------------------------------
+*	@version	1.0
+*	@author		The Develovers
+*	@link		http://www.thedevelovers.com
+*	@copyright	Copyright 2013 The Develovers
+*	---------------------------------------------------------------------
+*	
+*	Style for The Delicate WP Theme Documentation
+*
+*	############################################################################
+*/
+
+@import url('base.css');
+@import url('skeleton.css');
+@import url('skeleton-rwd.css');
+@import url('delicate-layout.css');
+@import url('delicate-layout-rwd.css');
+
+/* #Typography (baseline correction & font definition)
+================================================== */
+
+	h1, h2, h3, h4, h5, h6 { font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; color: #111; }
+	h1 { font-size: 28px; line-height: 42px; margin-bottom: 14px; }
+	h2 { font-size: 21px; line-height: 35px; margin-bottom: 7px; }
+	h3 { font-size: 18px; line-height: 28px; margin-bottom: 7px; }
+	h4 { font-size: 14px; line-height: 21px; margin-bottom: 7px; }
+	h5 { font-size: 11px; line-height: 14px; }
+	h6 { font-size: 7px; line-height: 21px; }
+	p { margin: 0 0 14px 0; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { line-height: 21px; }
+	blockquote { margin: 0 0 21px; padding: 7px 20px 0 19px; }
+	
+	hr { 
+	    height: 1px;
+		margin: 14px 0 28px;
+	 }
+	
+/* #Lists ( corrections)
+================================================== */
+	ul, ol { list-style-type: inherit; list-style-position: outside; margin-bottom: 21px; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 7px 0 7px 30px; }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 7px; }
+	li { line-height: 21px; margin-bottom: 14px; }
+
+/* #Images
+================================================== */
+	img { max-width: 100%; }
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, strong { 
+	color: #222; 
+	font-size: 13px;
+}
+
+a:link, a:visited {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#wrapper {
+	margin-top: 35px;
+}
+
+#head {
+	background-color: #323232;
+	color: #fff;
+	padding: 20px 0;
+}
+
+#head, #logo {
+	text-align: center;
+}
+
+/* main container */
+#top, #bottom {
+	margin: 48px 0 21px 0;
+}
+
+#top {
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+}
+
+#top h1 {
+	text-align: right;
+} 
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.welcome, .explanation, .doc-meta {
+	padding: 14px 0;
+}
+
+.doc-meta {
+	border-right: 1px solid #EEE;
+}
+
+
+/* toc */
+
+.toc.level1 {
+	list-style-type: upper-alpha;
+}
+
+.toc.level1 > li {
+	font-size: 1.2em;
+}
+
+.toc.level2 {
+	list-style-type: decimal;
+}
+
+.to-toc {
+	font-size: 0.9em;
+}
+
+.to-toc a:link {
+	text-decoration: underline;
+}
+
+.to-toc a:hover {
+	text-decoration: none;
+}
+
+/* main content, explanation */
+
+.topic > p {
+	padding-left: 28px;
+	margin-bottom: 21px;
+}
+
+.topic ul {
+	padding-left: 49px;
+}
+
+.topic p.to-top a {
+	text-decoration: underline;
+}
+
+.topic p.to-top a:hover {
+	text-decoration: none;
+}
+
+.topic img {
+	margin: 21px 0;
+	background-color: #ccc;
+	padding: 3px;
+}
+
+.topic.level2 {
+	list-style-type: none;
+}
+
+.code {
+	border: 1px solid #dedede;
+	background: #f1f1f1;
+	padding: 14px;
+	font-family: Courier;
+	margin-bottom: 7px;
+	overflow: auto;
+}
+
+.block {
+	border: 1px solid #000;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.block strong {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.block .block p {
+	margin-bottom: 0;
+}
+
+.topic ol {
+	list-style-type: decimal;
+	margin-left: 55px;
+}
+
+.topic ol li {
+	margin-bottom: 0;
+}
+
+ul.credits li {
+	margin-bottom: 7px;
+}
+

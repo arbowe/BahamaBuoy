@@ -1,0 +1,110 @@
+/*	
+*	############################################################################
+*	
+*	Delicate Layout Style (Responsive Mode)
+*	---------------------------------------------------------------------
+*	@version	1.0
+*	@author		The Develovers
+*	@link		http://www.thedevelovers.com
+*	@copyright	Copyright 2013 The Develovers
+*	---------------------------------------------------------------------
+*	
+*	Responsive layout style for sidebar enabled scenario and accomodate
+*	various screen size. 
+*
+*	############################################################################
+*/
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+		.del-main-content	{ width: 768px; }
+		
+		/*	Single Sidebar */
+			
+	    .container.single-sidebar .del-main-content .four.columns,          
+		.container.single-sidebar .del-main-content .eight.columns,
+	    .container.single-sidebar .del-main-content .twelve.columns,		   
+	    .container.single-sidebar .del-main-content .one-third.column,		   
+		.container.single-sidebar .del-main-content .two-thirds.column	   { width: 233px; }
+		.container.single-sidebar .del-main-content .sixteen.columns       { width: 485px; }
+	
+	    .container.single-sidebar .del-main-content .eleven.columns        { width: 508px; }
+	    	    
+	
+		/* Double Sidebar */
+	
+		.container.double-sidebar .del-main-content .four.columns,          
+		.container.double-sidebar .del-main-content .eight.columns,
+	    .container.double-sidebar .del-main-content .twelve.columns,		   
+	    .container.double-sidebar .del-main-content .one-third.column,		   
+		.container.double-sidebar .del-main-content .two-thirds.column,
+		.container.double-sidebar .del-main-content .sixteen.columns       { width: 342px; }
+		
+		.container.double-sidebar .del-main-content .three.columns,
+		.container.double-sidebar .del-main-content .five.columns		   { width: 300px; }
+ 	}
+ 	
+ 	
+ 	/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+
+		.del-main-content	{ width: 300px; }
+
+		.container .del-page-block		   { margin-left: 0 !important; }
+		
+
+		/*	Single & Double Sidebar */
+		
+		.container.single-sidebar .del-main-content .four.columns,
+	    .container.single-sidebar .del-main-content .eight.columns,
+	    .container.single-sidebar .del-main-content .twelve.columns,
+	    .container.single-sidebar .del-main-content .sixteen.columns,
+	    .container.single-sidebar .del-main-content .one-third.column,
+	    .container.single-sidebar .del-main-content .two-thirds.column,
+	    .container.double-sidebar .del-main-content .four.columns,
+	    .container.double-sidebar .del-main-content .eight.columns,
+	    .container.double-sidebar .del-main-content .twelve.columns,
+	    .container.double-sidebar .del-main-content .sixteen.columns,
+	    .container.double-sidebar .del-main-content .one-third.column,
+	    .container.double-sidebar .del-main-content .two-thirds.column	   { width: 300px; }
+	}
+	
+	
+	
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+		.del-main-content	{ width: 420px; }
+
+		/*	Single & Double Sidebar */
+		
+		.container.single-sidebar .del-main-content .four.columns,
+	    .container.single-sidebar .del-main-content .eight.columns,
+	    .container.single-sidebar .del-main-content .twelve.columns,
+	    .container.single-sidebar .del-main-content .sixteen.columns,
+	    .container.single-sidebar .del-main-content .one-third.column,
+	    .container.single-sidebar .del-main-content .two-thirds.column,
+	    .container.double-sidebar .del-main-content .four.columns,
+	    .container.double-sidebar .del-main-content .eight.columns,
+	    .container.double-sidebar .del-main-content .twelve.columns,
+	    .container.double-sidebar .del-main-content .sixteen.columns,
+	    .container.double-sidebar .del-main-content .one-third.column,
+	    .container.double-sidebar .del-main-content .two-thirds.column	   { width: 420px; }		
+	}	
+	
+	

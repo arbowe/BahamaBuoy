@@ -1,0 +1,233 @@
+/* Big Thing Landing Page Style for General Product/Service */
+
+@import url('style.css');
+
+/* top nav */
+#top-nav .nav > li > a.btn {
+	padding: 10px 15px;
+	margin: 0 0 0 30px;
+}
+
+#top-nav .nav > li > a.btn:hover {
+	background-color: #0376DA;
+	color: #fff;
+}
+
+/* hero unit */
+.hero-unit {
+	padding-top: 7em;
+	text-align: center;
+}
+
+.hero-unit.video {
+	text-align: left;
+}
+
+.hero-unit .container .row-fluid {
+	min-height: 520px;
+}
+
+.hero-text {
+	padding: 0;
+}
+
+.hero-text .heading {
+	margin-top: 30px;
+	font-size: 3.5em; 
+}
+
+.hero-text .description {
+	margin-bottom: 75px;
+	font-size: 1.3em;
+}
+
+.hero-unit.video .hero-text .heading {
+	margin-top: 0;
+	font-size: 2.5em; 
+}
+
+.hero-unit.video .hero-text .description {
+	margin-bottom: 75px;
+	font-size: 1em;
+}
+
+.hero-video iframe {
+	width: 100%;
+}
+
+.hero-unit .btn {
+	font-size: 1.5em;
+	padding: 23px 78px;
+}
+
+/* pricing table */
+.pricing {
+	margin-top: -20px;
+	margin-bottom: 65px;
+}
+
+.pricing .heading {
+	margin: 0;
+	line-height: 1;
+}
+
+.pricing .row-fluid {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.pricing-table {
+	padding: 30px 30px 0 30px;
+	background: #fff;
+	border: 1px solid #bababa;
+	text-align: center;	
+}
+
+.pricing-table .heading {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+	color: #323232;
+	margin-bottom: 15px;
+}
+
+.pricing-table p.pricing-badge {
+	background: url(../img/badge.png) no-repeat;
+	width: 96px;
+	height: 96px;
+	margin: 0;
+	position: absolute;
+	top: -3em;
+	right: -3em;
+}
+
+.pricing-badge span {
+	display: block;
+	padding-top: 31%;
+	font-weight: 300;
+	font-size: 1.2em;
+	color: #FFF;
+}
+
+.pricing-table.recommended {
+	position: relative;
+}
+
+.pricing-table .description {
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.pricing-table ul {
+	list-style-type: none;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.pricing-table ul.icon-feature {
+	margin: 16px 0;
+}
+
+.pricing-table ul.icon-feature li {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin: 60px 3px;
+}
+
+.pricing-table .bottom {
+	background: #e8e8e8;
+	margin: 0 -30px;
+	padding: 30px 0;
+}
+
+.pricing-table ul.feature-list {
+	margin: 0 0 30px 0;
+	
+}
+
+.pricing .btn {
+	padding: 10px 30px;
+	font-size: 1.4em;
+	color: #fff;
+	min-width: 104px;
+}
+
+.pricing .btn.default {
+	background-color: #969DA3;
+}
+
+.pricing-table .btn.default:hover,
+.pricing-table .btn.default:focus,
+.pricing-table .btn.default:active,
+.pricing-table .btn.default.active {
+	background-color: #9BA3AA;
+}
+
+
+
+/* Media Queries
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
+
+@media (min-width: 980px) {
+
+}
+
+@media (max-width: 979px) {
+	#top-nav .nav > li > a.btn {
+		margin: 0 30px;
+		font-weight: 300; 
+	}
+
+	.pricing .row-fluid {
+		width: 95%;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.pricing-table {
+		padding: 30px 20px 0 20px; 
+	}
+
+	.pricing-table .bottom {
+		margin: 0 -20px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.hero-unit {
+		padding-top: 20px;
+	}
+
+	.hero-text {
+		margin: 20px 0;
+		text-align: center;
+	}
+
+	.pricing-table {
+		margin-bottom: 65px;
+	}
+
+	.pricing .row-fluid {
+		width: 85%;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.pricing-table {
+		padding: 30px 0 0 0; 
+	}
+
+	.pricing-table .bottom {
+		margin: 0;
+	}
+}
